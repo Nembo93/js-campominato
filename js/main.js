@@ -23,7 +23,13 @@ boardContainer.innerHTML = ``;
             boardContainer.append(boardCell);
             boardCell.addEventListener(`click`, function(){
                 console.log(this.innerHTML);
-                this.classList.add(`clicked`);
+                if (bomb.includes[this]){
+                    this.classList.add(`clicked`);
+                }
+                else { 
+                    this.classList.add(`clicked_bomb`);
+                }
+                
             })
         }
     } else if (gameLevel.value === `medio`){
@@ -59,7 +65,6 @@ boardContainer.innerHTML = ``;
 const bomb = [];
 let i = 1;
 while(i <= 16){
-    
     let myNum = Math.floor(Math.random() * (100 - 1) + 1);
     console.log(myNum);
     if (bomb.includes(myNum)){
@@ -68,7 +73,6 @@ while(i <= 16){
     else{
         bomb.push(myNum);
     }
-
     i++;
 }
 

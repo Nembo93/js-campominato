@@ -32,3 +32,6 @@
 .clicked{
     background-color: blue;
 }
+.clicked_bomb{
+    background-color: red;
+}
