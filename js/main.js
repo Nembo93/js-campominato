@@ -23,8 +23,8 @@ boardContainer.innerHTML = ``;
             boardContainer.append(boardCell);
             boardCell.addEventListener(`click`, function(){
                 console.log(this.innerHTML);
-                let bombNum = i;
-                if (bomb.includes(bombNum)){
+                // let bombNum = i;
+                if (bomb.includes(i)){
                     this.classList.add(`clicked_bomb`);
                 }
                 else { 
@@ -77,6 +77,15 @@ while(bomb.length <= 15){
     i++;
 }
 console.log(bomb);
+
+for (i=1; i<=100; i++){
+    if (bomb.includes(i)){
+        console.log(`bomb`);
+    } else{
+        console.log(i);
+    }
+    
+}
 
 
 
