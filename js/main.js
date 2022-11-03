@@ -63,8 +63,8 @@ boardContainer.innerHTML = ``;
 
 // Dichiarare un array con 16 numneri casuali da 1 a 100
 const bomb = [];
-let i = 1;
-while(i <= 16){
+let i = 0;
+while(bomb.length <= 15){
     let myNum = Math.floor(Math.random() * (100 - 1) + 1);
     console.log(myNum);
     if (bomb.includes(myNum)){
@@ -75,8 +75,9 @@ while(i <= 16){
     }
     i++;
 }
-
 console.log(bomb);
+
+
 
 
 
