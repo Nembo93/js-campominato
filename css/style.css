@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    background-color: yellow;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell{
+    background-color: azure;
+    border: 1px solid blue;
+}
+.easy_cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+.medium_cell{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.hard_cell{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+.clicked{
+    background-color: blue;
+}
