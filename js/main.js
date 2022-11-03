@@ -23,11 +23,12 @@ boardContainer.innerHTML = ``;
             boardContainer.append(boardCell);
             boardCell.addEventListener(`click`, function(){
                 console.log(this.innerHTML);
-                if (bomb.includes[this]){
-                    this.classList.add(`clicked`);
+                let bombNum = i;
+                if (bomb.includes(bombNum)){
+                    this.classList.add(`clicked_bomb`);
                 }
                 else { 
-                    this.classList.add(`clicked_bomb`);
+                    this.classList.add(`clicked`);
                 }
                 
             })
